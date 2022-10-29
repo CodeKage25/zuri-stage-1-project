@@ -5,7 +5,7 @@ function App() {
     <div className='content'>
       <div className='main__section'>
         <div className='content'>
-
+          
         </div>
       </div>
     </div>
