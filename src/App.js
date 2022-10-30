@@ -1,4 +1,9 @@
 import "./App.css";
+import logo from "./asset/images/Icon.png";
+import slack from "./asset/images/slack.png";
+import git from "./asset/images/github.png";
+import zuri from "./asset/images/Vector.png";
+import i4g from "./asset/images/I4G.png";
 
 function App() {
   return (
@@ -16,7 +21,7 @@ function App() {
               <div className="content__button">
                 <div className="share">
                   <img
-                    src="./asset/images/icon.png"
+                    src={logo}
                     alt="logo"
                     className="icon"
                   />
@@ -67,12 +72,23 @@ function App() {
           <div className="container">
             <div className="link__content">
               <div className="social__icon">
-                <div className="slack"><img src="./asset/images/slack.png" alt="slack-logo"/></div>
-                <div className="git"><img src="./asset/images/git.jpg" alt="github-logo"/></div>
+                <div className="slack"><img src={slack} alt="slack-logo"/></div>
+                <div className="git"><img src={git} alt="github-logo"/></div>
               </div>
             </div>
           </div>
         </section>
+      </section>
+      <section className="footer">
+        <div className="footer__container">
+          <div className="footer__content">
+            <div className="footer__image"><img src={zuri} alt=""  /> </div>
+            
+            <div className="footer__text">HNG Internship 9 Frontend Task</div>
+
+            <div className="footer__image-2"><img src={i4g} alt=""  /></div>
+          </div>
+        </div>
       </section>
     </div>
   );
